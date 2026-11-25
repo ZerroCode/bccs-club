@@ -43,7 +43,7 @@ export default function TeamSection() {
                 ))}
               </ul>
               <div className="mt-10 flex">
-                <a href="/events" className="text-sm font-semibold leading-6 text-bc-red hover:text-bc-yellow">
+                <a href="/events?view=calendar#event-schedule" className="text-sm font-semibold leading-6 text-bc-red hover:text-bc-yellow">
                   See our upcoming events <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>

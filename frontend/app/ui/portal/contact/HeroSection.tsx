@@ -36,7 +36,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-3"><MapPinIcon aria-hidden="true" className="h-6 w-6 text-bc-red" /><h3 className="text-xl font-bold text-gray-900">Come say hello</h3></div>
             <p className="mt-4 font-semibold text-bc-red">Club Hours: 12:00 PM – 2:00 PM</p>
             <p className="mt-4 leading-7 text-gray-600">Room 0317<br />Ingersoll Hall<br />Brooklyn College</p>
-            <Link href="/events" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-bc-red hover:underline">Check the Club Hours schedule <span aria-hidden="true">→</span></Link>
+            <Link href="/events?view=calendar#event-schedule" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-bc-red hover:underline">Check the Club Hours schedule <span aria-hidden="true">→</span></Link>
           </div>
         </div>
       </section>

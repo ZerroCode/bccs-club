@@ -6,6 +6,7 @@ export interface Event {
   slug: string;
   isActive: boolean;
   rsvpLink: string;
+  flierLink?: string | null;
   rrule?: {
     freq: string;
     interval: number;

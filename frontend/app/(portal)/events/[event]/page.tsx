@@ -14,7 +14,7 @@ export default function Page() {
 
   const [event, setEvent] = useState<Event | null>(null);
 
-  const [state, setState] = useState<"error" | "success" | "loading">(
+  const [state, setState] = useState<"error" | "success" | "loading" | "unavailable">(
     "loading"
   );
 
@@ -40,17 +40,18 @@ export default function Page() {
       setEvent(eventAction);
       setState("success");
     };
-    fetchEvent();
+    fetchEvent().catch(() => setState("unavailable"));
   }, [eventName]);
 
-  if (state === "loading") return;
+  if (state === "loading") return <p role="status" className="px-6 pt-32">Loading event…</p>;
+  if (state === "unavailable") return <p role="alert" className="px-6 pt-32">The event could not be loaded. Please try again later.</p>;
 
   return (
     <main>
       {event != null && <EventSection event={event} />}
       <div className="mt-5 flex justify-center items-center gap-x-6">
         <Link
-          href="/events"
+          href="/events?view=calendar#event-schedule"
           rel="noopener noreferrer"
           className="rounded-md px-3.5 py-2.5 text-sm font-semibold bg-transparent text-bc-red border border-bc-red hover:bg-bc-yellow hover:border-transparent"
         >

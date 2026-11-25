@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import gameJam2025 from "../../../images/club-event/gameJam-2025.jpg";
+import gameJam2025 from "../../../images/event-flyers/19.jpg";
 import Link from "next/link";
 
 export default function Hero() {
