@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.club-page-gradient {
+  background-color: white;
+  background-image:
+    radial-gradient(ellipse at 15% 45%, rgb(255 128 181 / 20%), transparent 65%),
+    radial-gradient(ellipse at 85% 75%, rgb(144 137 252 / 20%), transparent 65%),
+    linear-gradient(to bottom, rgb(136 35 70 / 15%), transparent);
+}
+
 .animate-typing {
   display: flex;
   gap: 4px;

@@ -3,7 +3,7 @@ import SocialMediaSection from "@/app/ui/portal/contact/SocialMediaSection";
 
 export default function Page() {
   return (
-    <main>
+    <main className="club-page-gradient">
       <HeroSection />
       <SocialMediaSection />
     </main>

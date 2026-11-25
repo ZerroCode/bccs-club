@@ -13,7 +13,7 @@ const Calendar = ({
   events: Event[];
 }) => {
   return (
-    <div className="mx-auto max-w-4xl px-6 lg:px-8 py-8">
+    <div className="mx-auto max-w-6xl py-4 [&_.fc-toolbar]:flex-wrap [&_.fc-toolbar]:justify-center [&_.fc-toolbar]:gap-3 [&_.fc-toolbar-title]:text-xl sm:[&_.fc-toolbar]:justify-between sm:[&_.fc-toolbar-title]:text-2xl [&_.fc-button]:!text-xs sm:[&_.fc-button]:!text-sm">
       <div className="overflow-hidden shadow-lg rounded-lg">
         <div className="px-4 py-6">
           <FullCalendar

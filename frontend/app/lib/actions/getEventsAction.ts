@@ -9,6 +9,9 @@ export default async function getEventsAction(): Promise<Event[]> {
       "Content-Type": "application/json",
     },
   });
+  if (!events.ok) {
+    throw new Error("Unable to load events");
+  }
   const data = await events.json();
   return data;
 }
